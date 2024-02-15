@@ -1,0 +1,51 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    flex: 0 0 100%;
+}
+nav{
+    flex: 0 0 100%;
+}
+article{
+    flex: 0 0 80%;
+    justify-content: center;
+}
+footer{
+    flex: 0 0 100%;
+}
+.fejezetek{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 2px solid black;
+}
+.elsofejezet{
+    display: flex;
+}
+.masodikfejezet{
+    display: flex;
+}
+.harmadikfejezet{
+    display: flex;
+}
+.negyedikfejezet{
+    display: flex;
+}
+.otodikfejezet{
+    display: flex;
+}
+img{
+    width: 100%;
+    width: 300px;
+    margin: 15px;
+}
+h1{
+    text-align: center;
+}
+p{
+    font-size: 25px;
+    text-align: justify;
+    margin: 15px;
+}
