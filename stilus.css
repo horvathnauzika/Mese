@@ -1,13 +1,22 @@
-article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+body{
+    background-image: url("kepek/hatterkep4.jpg");
 }
+form{
+    background-color: #B6C4B6;
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    background-color: #EEF0E5;
 }
+
+h1{
+    margin-left: 5px;
+}
+
 
 header{
     flex: 0 0 100%;
@@ -18,11 +27,32 @@ nav{
 }
 
 article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+article{
     flex: 0 0 100%;
 }
 
 footer{
     flex: 0 0 100%;
+}
+nav li{
+    color: #304D30;
+    margin-left: 10px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #304D30;
+    color: #EEF0E5;
+    padding: 10px;
 }
 
 nav > ul{
@@ -31,4 +61,18 @@ nav > ul{
     gap: 10px;
     flex-wrap: wrap;
     padding: 0px;
+}
+
+input{
+    margin: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul{
+        flex: column;
+    }
 }
