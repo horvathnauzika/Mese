@@ -18,65 +18,65 @@
             </ul>
         </nav>
         <article>
-            <form>
-                <div>
-                    <fieldset>
-                        <legend>Személyes adatok</legend>
-                        <label for="fname">Vezetéknév:</label>
-                        <input type="text" id="fname" name="fname" required><br>
-                        <label for="lname">Keresztnév:</label>
-                        <input type="text" id="lname" name="lname" required><br>
-                        <label for="szuldatum">Születési dátum:</label>
-                        <input type="date" id="szuldatum" name="szuldatum">
-                    </fieldset><br>
-                </div>
-                    <div>
-                    <fieldset>
-                        <legend>Ön engedné, hogy ezt a képregényt egy kiskorú gyermek olvassa?</legend>
-                        <input type="radio" id="igen" name="valasztas" value="igen">
-                        <label for="igen">Igen</label><br>
-                        <input type="radio" id="nem" name="valasztas" value="nem">
-                        <label for="css">Nem</label><br>
-                        <p><label for="w3review">Kérjük ezzel a kérdéssel kapcsolatban fejtse ki véleményét bővebben az alábbi részlegben:</label></p>
-                        <textarea id="w3review" name="w3review" rows="5" cols="100"></textarea>
-                        <br>
-                    </fieldset><br>
-                </div>
-                    <div>
-                        <fieldset>
-                            <legend>Ön szerint elég hosszú a történet egy esti meséhez a gyerekeknek?</legend>
-                            <input type="radio" id="rovid" name="velemeny" value="rovid">
-                            <label for="rovid">Nem, túl rövidnek gondolom</label><br>
-                            <input type="radio" id="megfelelo" name="velemeny" value="megfelelo">
-                            <label for="megfelelo">Teljesen megfelelő</label><br>
-                            <input type="radio" id="hosszu" name="velemeny" value="hosszu">
-                            <label for="hosszu">Túl hosszúnak találom</label>
-                        </fieldset><br>
-                    </div>
-                    <div>
-                        <fieldset>
-                            <legend>Ön szerint mi a történet tanulsága? (Többet is megjelölhet!)</legend>
-                            <input type="checkbox" id="nyul" name="nyul" value="nyul">
-                            <label for="nyul">Ne vadásszunk nyulakra az erdőben</label><br>
-                            <input type="checkbox" id="szavak" name="szavak" value="szavak">
-                            <label for="szavak">Néha elegek a kedves szavak a probléma megoldásához</label><br>
-                            <input type="checkbox" id="csapatmunka" name="csapatmunka" value="csapatmunka">
-                            <label for="csapatmunka">Csapatmunkával könnyebben találhatjuk meg a probléma megoldását</label>
-                        </fieldset><br>
-                    </div>
-                    <div>
-                        <fieldset>
-                            <legend>Itt tud feliratkozni, amennyiben értesülni szeretne újabban megjelenő képregényeinkről</legend>
-                            <label for="ertnev">Értesítési név:</label>
-                            <input type="text" id="ertnev" name="ertnev"><br>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Pl. nev@gmail.com"><br>
-                            <label for="phone">Telefonszám:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Pl. 06 20 123 4567">
-                        </fieldset>
-                        <input type="button" value="Küldés">
-                    </div>
-            </form>
+           <form>
+            <div>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <label for="fname">Vezetéknév:</label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Keresztnév:</label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="szuldatum">Születési dátum:</label>
+                <input type="date" id="szuldatum" name="szuldatum" required>
+            </fieldset><br>
+        </div>
+        <div></div>
+            <fieldset>
+                <legend>Ön engedné, hogy a képregényt kiskorú gyermek olvassa?</legend>
+                <input type="radio" id="igen" name="valasztas" value="igen">
+                <label for="igen">Igen</label><br>
+                <input type="radio" id="nem" name="valasztas" value="nem">
+                <label for="css">Nem</label><br>
+                <p><label for="w3review">Kérjük ezzel a kérdéssel kapcsolatban fejtse ki véleményét bővebben az alábbi részlegben:</label></p>
+                <textarea id="w3review" name="w3review" rows="5" cols="100" required></textarea>
+                <br>
+            </fieldset><br>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Ön szerint elég hosszú a történet egy esti meséhez a gyerekeknek?</legend>
+                <input type="radio" id="rovid" name="velemeny" value="rovid">
+                <label for="rovid">Nem, túl rövidnek gondolom</label><br>
+                <input type="radio" id="megfelelo" name="velemeny" value="megfelelo">
+                <label for="megfelelo">Teljesen megfelelő</label><br>
+                <input type="radio" id="hosszu" name="velemeny" value="hosszu">
+                <label for="hosszu">Túl hosszúnak találom</label>
+            </fieldset><br>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Mi a történet tanulsága? (Többet is megjelölhet!)</legend>
+                <input type="checkbox" id="nyul" name="nyul" value="nyul">
+                <label for="nyul">Ne vadásszunk nyulakra az erdőben</label><br>
+                <input type="checkbox" id="szavak" name="szavak" value="szavak">
+                <label for="szavak">Néha elegek a kedves szavak a probléma megoldásához</label><br>
+                <input type="checkbox" id="csapatmunka" name="csapatmunka" value="csapatmunka">
+                <label for="csapatmunka">Csapatmunkával könnyebben találhatjuk meg a probléma megoldását</label>
+            </fieldset><br>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Itt tud feliratkozni, amennyiben értesülni szeretne újabban megjelenő képregényeinkről</legend>
+                <label for="ertnev">Értesítési név:</label>
+                <input type="text" id="ertnev" name="ertnev"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Pl. nev@gmail.com"><br>
+                <label for="phone">Telefonszám:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Pl. 06 20 123 4567">
+            </fieldset>
+            <input type="submit" value="Küldés">
+        </div>
+           </form>
         </article>
         <footer>
             <p>Ⓒ Minden jog fenntartva!</p>

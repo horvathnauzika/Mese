@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-image: url("kepek/hatterkep4.jpg");
 }
@@ -8,33 +12,30 @@ form{
 main{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    justify-content: space-evenly;
+    align-items: flex-start;
     margin: auto;
     background-color: #EEF0E5;
 }
 
-h1{
-    margin-left: 5px;
+article{
+    flex: 0 0 90%;
 }
 
+h1{
+    text-align: center;
+}
 
 header{
     flex: 0 0 100%;
 }
 
+footer{
+    text-align: center;
+}
+
 nav{
     flex: 0 0 20%;
-}
-
-article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-article{
-    flex: 0 0 100%;
 }
 
 footer{
@@ -74,5 +75,9 @@ textarea{
 @media screen and (max-width: 600px) {
     nav ul{
         flex: column;
+    }
+    article{
+        flex: column;
+        width: 100%;
     }
 }
