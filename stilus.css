@@ -48,6 +48,7 @@ nav li{
 
 nav a{
     text-decoration: none;
+    color: black;
 }
 
 nav a:hover{
@@ -75,6 +76,10 @@ textarea{
 @media screen and (max-width: 600px) {
     nav ul{
         flex: column;
+    }
+    textarea{
+        flex: column;
+        width: 100%;
     }
     article{
         flex: column;

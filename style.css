@@ -2,50 +2,84 @@ main{
     display: flex;
     flex-wrap: wrap;
 }
+body{
+    background-image: url("kepek/hatterkep1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Comics', sans-serif;;
+}
 header{
     flex: 0 0 100%;
 }
 nav{
-    flex: 0 0 100%;
+    flex: 0 0 80%;
+    margin: 0 auto;
+    
+}
+nav a:hover{
+    background-color: green;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(189, 255, 189);
+    border: 2px solid rgba(6, 180, 6, 0.61);
+    padding: 10px;
+    border-radius: 15px;
 }
 article{
     flex: 0 0 80%;
-    justify-content: center;
+    margin: 0 auto;
 }
 footer{
     flex: 0 0 100%;
+    text-align: center;
+    color:  rgb(189, 255, 189);
+    margin: 7px;
 }
 .fejezetek{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    border: 2px solid black;
+    border-radius: 15px;
 }
-.elsofejezet{
+.fejezet{
     display: flex;
+    border: 2px solid rgba(6, 180, 6, 0.61);
+    border-radius: 15px;
 }
-.masodikfejezet{
-    display: flex;
-}
-.harmadikfejezet{
-    display: flex;
-}
-.negyedikfejezet{
-    display: flex;
-}
-.otodikfejezet{
-    display: flex;
-}
+
 img{
     width: 100%;
-    width: 300px;
+    width: 200px;
     margin: 15px;
 }
 h1{
     text-align: center;
+    color: rgb(189, 255, 189);
 }
 p{
+    color: rgb(189, 255, 189);
     font-size: 25px;
     text-align: justify;
     margin: 15px;
+}
+
+@media screen and (max-width: 650px) {
+    a{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .fejezet{
+        flex-direction: column;
+    }
 }
