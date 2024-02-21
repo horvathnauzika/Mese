@@ -30,17 +30,28 @@
                 <input type="date" id="szuldatum" name="szuldatum" required>
             </fieldset><br>
         </div>
-        <div></div>
+        <div>
             <fieldset>
                 <legend>Ön engedné, hogy a képregényt kiskorú gyermek olvassa?</legend>
                 <input type="radio" id="igen" name="valasztas" value="igen">
                 <label for="igen">Igen</label><br>
                 <input type="radio" id="nem" name="valasztas" value="nem">
-                <label for="css">Nem</label><br>
+                <label for="nem">Nem</label><br>
                 <p><label for="w3review">Kérjük ezzel a kérdéssel kapcsolatban fejtse ki véleményét bővebben az alábbi részlegben:</label></p>
                 <textarea id="w3review" name="w3review" rows="5" cols="100" required></textarea>
                 <br>
             </fieldset><br>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Ön az alábbi két részlet közül találja valamelyiket túl erőszakosnak, hogy egy kisgyerek hallja vagy olvassa ezeket? Kérjük pipálja be azt, amelyiket igen.</legend>
+                <input type="checkbox" id="elso" name="elso" value="elso">
+                <label for="elso">"Egy mérges medve vadászott a nyuszikra, és a kis nyuszik rémülten menekültek az erdő mélyébe.."</label><br>
+                <input type="checkbox" id="masodik" name="masodik" value="masodik">
+                <label for="masodik">"Amikor a medve észrevette őket, dühösen rontott rájuk.."</label><br>
+                <p><label for="w3review">Kérjük ezzel a kérdéssel kapcsolatban fejtse ki véleményét bővebben az alábbi részlegben:</label></p>
+                <textarea id="w3review2" name="w3review2" rows="5" cols="100" required></textarea>
+            </fieldset>
         </div>
         <div>
             <fieldset>
@@ -68,14 +79,16 @@
             <fieldset>
                 <legend>Itt tud feliratkozni, amennyiben értesülni szeretne újabban megjelenő képregényeinkről</legend>
                 <label for="ertnev">Értesítési név:</label>
-                <input type="text" id="ertnev" name="ertnev"><br>
+                <input type="text" id="ertnev" name="ertnev" placeholder="Kérjük írja be a teljes nevét"><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Pl. nev@gmail.com"><br>
                 <label for="phone">Telefonszám:</label>
                 <input type="tel" id="phone" name="phone" placeholder="Pl. 06 20 123 4567">
             </fieldset>
+            <p class="kozepre">Köszönjük, hogy időt szánt a kérdőív kitöltésére!</p>
             <input type="submit" value="Küldés">
         </div>
+        
            </form>
         </article>
         <footer>

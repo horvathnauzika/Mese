@@ -55,6 +55,7 @@ nav a:hover{
     background-color: #304D30;
     color: #EEF0E5;
     padding: 10px;
+    border-radius: 10px;
 }
 
 nav > ul{
@@ -67,6 +68,14 @@ nav > ul{
 
 input{
     margin: 5px;
+}
+
+input[type=submit]{
+    margin: 1%;
+}
+
+.kozepre{
+    text-align: center;
 }
 
 textarea{
